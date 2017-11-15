@@ -31,5 +31,3 @@ open_file_1.close()
 
 
 
-
-
