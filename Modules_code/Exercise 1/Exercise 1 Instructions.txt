@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------------------------------------------------------------
+Challenge 1 - Name Validation
+-------------------------------------------------------------------------------------------------------------------------------------
+In this exercise you will make use of the python skills you have acquired so far to complete a potential real world task.
+
+Your client has sent you a long list of names for use in your performance test scripts, the test engineer started writing a script 
+to validate the format of the names but had to leave and has asked you to finish it.
+Your task is to complete the validate_name function to complete the script.
+
+Note: the script should run successfully without you adding any code, if it does not please let us know and we can assist. 
+
+---------------
+Expected Output
+---------------
+If you have scripted the function correctly, these are the results you should expect to see:
+
+	Total count of records imported: 603
+	Count of imported records that meet the selected criteria: 600
+	list of invalid names
+	---------------------
+	Carmelina Constantino
+	Santino D'Pena
+	Olive.Ferguson
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Extension challenges 
+-------------------------------------------------------------------------------------------------------------------------------------
+Should you finish early or just want the extra challenge, we recommend giving the following extras a go
+
+1) instead of writing the names to the console, save the valid names into a new file.
+2) rewrite the validate_name function to meet the following rules:
+	Returns True if the name is valid, False if not based off the following rules
+	- max character length = 20
+	- must be two alpha only words seperated by a non alpha character
+
+Expected results for the extension challenge:
+
+	Total count of records imported: 603
+	Count of imported records that meet the selected criteria: 596
+	list of invalid names
+	---------------------
+	Carmelina Constantino
+	John Bon Jovi
+	J                  K
+	Sunjeet the Wise
+	Santino D'Pena
+	Leland Eugene Mullen
+	Maci
