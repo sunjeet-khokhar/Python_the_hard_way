@@ -1,4 +1,4 @@
-# read contents from one file and copy to other . Files must exist in the local folder for this to work ! Make this solution better by not having that constraint ;) 
+# read contents from one file and copy to other . source and destination files need to be passed as command line arguments
 
 from sys import argv
 
@@ -18,10 +18,9 @@ open_file_2.close()
 
 open_file_2_again = open(destination_file)
 
-print(f"Checking whether content actually got written? {open_file_2_again.read()}")
+print(f"\n Checking whether content actually got written? Here are the file contents -----> \n {open_file_2_again.read()}")
 
-open_file_1.close()
-
+open_file_2_again.close()
 
 
 
