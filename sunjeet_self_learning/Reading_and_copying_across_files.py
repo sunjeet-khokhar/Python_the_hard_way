@@ -1,4 +1,4 @@
-# read contents from one file and copy to other 
+# read contents from one file and copy to other . Files must exist in the local folder for this to work ! ;) 
 
 from sys import argv
 
