@@ -33,6 +33,9 @@ cursour should have inserted a new line and tab here
 #as a single line using string literals
 print(" You\'d need to know \'bout escapes with \\ that do:")
 
+print("Donald Trump believes he is \"politically\" incorrect, I just think he is \"correctly\" stupid")
+
+
 from sys import argv
 
 script,first_var,second_var,third_var = argv
