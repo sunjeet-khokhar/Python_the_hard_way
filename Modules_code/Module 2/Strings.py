@@ -15,7 +15,7 @@ for word in name_split:
     print(list(word))
 
 # joining the sentence back , note that a list has not got a join method that is why we had to use a blank string to invoke the string object and it's join method.
-print("".join(name_split))
+print(" ".join(name_split))
 
 	
 
