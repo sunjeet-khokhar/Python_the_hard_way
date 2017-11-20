@@ -6,6 +6,9 @@ In this exercise you will make use of the python skills you have acquired so far
 Your client has sent you a long list of names for use in your performance test scripts, the test engineer started writing a script 
 to validate the format of the names but had to leave and has asked you to finish it.
 Your task is to complete the validate_name function to complete the script.
+The criteria for validation is included in the Python file ValidateName_Exercise.py
+List of names is in names.txt
+The solution is in the file ValidateName_Solution.py 
 
 Note: the script should run successfully without you adding any code, if it does not please let us know and we can assist. 
 
