@@ -12,6 +12,7 @@ for s in spam:
 print(spam[0])
 print(spam[-1])
 print(''.join(spam))
+print(' '.join(spam))
 print("#".join(spam[0:4]))
 spam.sort()
 print(spam)
