@@ -6,6 +6,8 @@ name = "Mary had a little lamb"
 name_split = name.split(" ")
 print(name_split)
 
+    
+
 # iterate through the list and print each entry
 for word in name_split:
     print(word)
