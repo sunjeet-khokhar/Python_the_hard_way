@@ -10,7 +10,9 @@ from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Chrome()
 LOGIN_BUTTON = (By.ID,'LoginLink')
 EMAIL_ID = (By.ID,'page_email')
+USER_NAME = <<enter use name>>
 PASSWORD_LOCATOR = 'page_password'
+USER_PASSWORD = <<enter password>>
 LOGIN_BUTTON_on_LOGIN_PAGE = 'LoginPageButton'
 USER_NAME_DISPLAY = (By.XPATH,'//*[@id="container"]/div[1]/div[1]/div[2]/div/p')
 LOGOUT_XPATH = '//*[@id="container"]/div[1]/div[1]/div[2]/div/p/a'
