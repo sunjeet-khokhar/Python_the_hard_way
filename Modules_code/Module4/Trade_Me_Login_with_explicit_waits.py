@@ -7,6 +7,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
+# for easy future changes and code maintainbility i have added all the locators and parameters like username/password at the top of the test
 driver = webdriver.Chrome()
 LOGIN_BUTTON = (By.ID,'LoginLink')
 EMAIL_ID = (By.ID,'page_email')
@@ -24,8 +26,10 @@ class TradeMe_Login:
  def login_test(self):
   driver.maximize_window()
   driver.get("http://www.trademe.co.nz")
+  #explicitly wait for prescence of the login button locator !
   login_button = WebDriverWait(driver,10).until(EC.presence_of_element_located(LOGIN_BUTTON))
   login_button.click()
+  #explicitly wait for the email id locator to be present
   email_id = WebDriverWait(driver,10).until(EC.presence_of_element_located(EMAIL_ID))
   email_id.send_keys(USER_NAME)
   password = driver.find_element_by_id(PASSWORD_LOCATOR)
@@ -33,6 +37,7 @@ class TradeMe_Login:
   login_button = driver.find_element_by_id(LOGIN_BUTTON_on_LOGIN_PAGE)
   login_button.click()
   try:
+   # again another explicit wait to wait for the user name to be displayed on a succesfull login
    user_name_after_login_located = WebDriverWait(driver,10).until(EC.presence_of_element_located(USER_NAME_DISPLAY))
   except (NoSuchElementException,TimeoutException) as e:
    print('Oops, Test failed, user name element not located')
@@ -42,6 +47,7 @@ class TradeMe_Login:
   logout_link = driver.find_element_by_xpath(LOGOUT_XPATH)
   logout_link.click()
   try:
+   # explicitly wait again for login link to appear on a succesful logout 
    login_link = WebDriverWait(driver,10).until(EC.presence_of_element_located(LOGIN_BUTTON))
   except (NoSuchElementException,TimeoutException) as e:
    print('Oops , Test failed login link could not be found')
