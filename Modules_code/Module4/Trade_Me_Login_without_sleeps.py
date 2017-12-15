@@ -27,7 +27,7 @@ email_id = driver.find_element_by_id("page_email")
 email_id.send_keys("sunjeet81@gmail.com")
 #find and enter your password in the password box
 password = driver.find_element_by_id("page_password")
-password.send_keys("yorks64")
+password.send_keys("******")
 # click login button
 login_page_button = driver.find_element_by_id("LoginPageButton")
 login_page_button.click()
