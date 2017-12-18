@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-# for easy future changes and code maintainbility i have added all the locators and parameters like username/password at the top of the test
+# for easy future changes and code maintainbility i have added all the locators and parameters  at the top of the test , so they are all in one place 
 driver = webdriver.Chrome()
 VIEW_ALL_ONE_DOLLAR_AUCTIONS = (By.XPATH,'//*[@id="OneDollarReserveStripe"]/div/div[1]/span[2]/a/span')
 LIST_OF_AUCTIONS = (By.ID,'ListViewList')
