@@ -13,7 +13,6 @@ def get_max_min_temp(url):
     else:
         print(response.status_code)
     json_response = response.json()
-    print(json_response)
     results_list= json_response['query']['results']['channel']['item']['forecast']
     for item in results_list:
         print(f"The high of {item['date']} is {item['high']} Fahrenheit and the low for the day is {item['low']} fahrenheit ")
